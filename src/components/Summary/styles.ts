@@ -6,6 +6,11 @@ export const Container = styled.div`
     gap: 2rem;
     margin-top: -7rem;
 
+    @media (max-width: 768px){
+                overflow-x: auto;
+                gap:1rem;
+            }
+
 
     div{
         background-color: var(--shape) ;
@@ -14,6 +19,9 @@ export const Container = styled.div`
         color: var(--text-title);
 
         
+        @media (max-width: 768px){
+                width:300px;
+            }
 
         header{
             display: flex ;
@@ -26,6 +34,17 @@ export const Container = styled.div`
             margin-top: 1rem;
             font-weight:400;
             line-height:3rem ;
+            white-space: nowrap;
+
+            
+
+            @media (max-width: 915px){
+                font-size: 1.5rem;
+            }
+            @media (max-width: 768px){
+                font-size: 2rem;
+            }
+           
         }
 
         &.totalCard{

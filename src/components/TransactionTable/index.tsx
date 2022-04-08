@@ -30,7 +30,8 @@ export function TransactionTable(){
                 )
 
             })}
-       
+            
+
       
         </tbody>
         </Container>

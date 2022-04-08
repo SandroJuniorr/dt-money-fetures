@@ -2,7 +2,6 @@ import { Container } from "./styles";
 import InComeImg from "../../assets/income.svg"
 import OutComeImg from "../../assets/outcome.svg"
 import TotalImg from "../../assets/total.svg"
-import { useContext } from "react";
 import { useTransaction } from "../../useTransaction";
 
 export function Summary(){
@@ -31,7 +30,8 @@ export function Summary(){
                 <p>Entradas</p>
                 <img src={InComeImg} alt="Entrada" />
                 </header>
-                <strong>{new Intl.NumberFormat('pt-BR',{
+                <strong>
+                    {new Intl.NumberFormat('pt-BR',{
                     style: 'currency',
                     currency:'BRL'
                 }).format(summary.deposits)}
