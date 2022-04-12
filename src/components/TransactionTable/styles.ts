@@ -20,9 +20,7 @@ export const Container = styled.table`
 
       margin-bottom: 1.75rem ;
 
-      td{
-        /* padding:0 ; */
-      }
+      
 
       td.title {
         grid-area: title;
@@ -48,7 +46,7 @@ export const Container = styled.table`
   }
 
   th {
-    color: var(--text-body);
+    color: ${props=> props.theme.colors.textBody};
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -56,19 +54,19 @@ export const Container = styled.table`
   }
 
   td {
-    background-color: var(--shape);
+    background-color: ${props=> props.theme.colors.shape} ;
     padding: 1.25rem 2rem;
-    color: var(--text-body);
+    color: ${props=> props.theme.colors.textBody};
     border-radius: 0.25rem;
 
     &.title {
-      color: var(--text-title);
+      color: ${props=> props.theme.colors.textTitle};
     }
     &.deposit {
-      color: var(--green);
+      color:${props=> props.theme.colors.green};
     }
     &.withdraw {
-      color: var(--red);
+      color: ${props=> props.theme.colors.red};
 
       &::before {
         content: "- ";

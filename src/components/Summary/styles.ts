@@ -13,10 +13,10 @@ export const Container = styled.div`
 
 
     div{
-        background-color: var(--shape) ;
+        background-color: ${props=> props.theme.colors.shape} ;
         border-radius:0.25rem ;
         padding: 1.5rem 2rem ;
-        color: var(--text-title);
+        color: ${props=> props.theme.colors.textTitle};
 
         
         @media (max-width: 768px){
@@ -48,8 +48,8 @@ export const Container = styled.div`
         }
 
         &.totalCard{
-            background-color: var(--green) ;
-            color: var(--shape);
+            background-color: ${props=> props.theme.colors.green} ;
+            color: ${props=> props.theme.colors.text};
         }
 
     }

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 
 export const Container = styled.header`
-    background: var(--blue)
+    background: ${props=> props.theme.colors.blue}
 
 `
 
@@ -15,21 +15,27 @@ export const Content = styled.div`
     align-items: center ;
     justify-content: space-between;
 
-
-    button{
-        background-color: var(--blue-light);
-        color: var(--shape);
+    div {
+        display:flex ;
+        align-items:center ;
+        button:first-child{
+        background-color: ${props=> props.theme.colors.blueLight};
+        color: ${props=> props.theme.colors.text};
         font-size:1rem;
         font-weight: 600;
 
         padding: 0 2rem ;
         border-radius: 0.25rem ;
         height: 3rem ;
+        transition: filter 0.7s ;
 
         &:hover{
             filter:brightness(0.9) ;
         }
         
+
+    }
+    
     }
 
 

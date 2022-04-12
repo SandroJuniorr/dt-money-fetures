@@ -17,7 +17,7 @@ export const GlobalStyle = createGlobalStyle`
          }
      }
 
-  :root{
+  /* :root{
     --background: #f0f2f5;
         --red: #E52E4D;
         --green: #33CC95;
@@ -29,12 +29,12 @@ export const GlobalStyle = createGlobalStyle`
         --shape:#FFFFFF;
         --input-background:#E7E9EE;
         --input-border:#D7D7D7;
-  }
+  } */
   body,input,textarea,button,h1,h2,h3,h4,h5,h6,strong{
          font-family: 'poppins' , sans-serif;
   }
   body{
-    background: var(--background) ;
+    background: ${props=> props.theme.colors.background} ;
   }
           
      
@@ -63,7 +63,7 @@ export const GlobalStyle = createGlobalStyle`
     
   }
   .react-modal-content{
-    background: var(--background);
+    background:${props=> props.theme.colors.background} ;
     width:100% ;
     max-width: 576px ;
     padding: 4rem 3rem ;

@@ -6,7 +6,7 @@ export const Container = styled.form`
     font-size: 1.5rem;
     font-weight: 600;
     line-height: 2rem;
-    color: var(--text-title);
+    color: ${props=> props.theme.colors.textTitle};
     margin-bottom: 2rem;
   }
   input {
@@ -15,8 +15,10 @@ export const Container = styled.form`
     padding: 1.25rem 1.5rem;
     margin-bottom: 1rem;
 
-    background: var(--input-background);
-    border: solid 1px var(--input-border);
+    color:${props=> props.theme.colors.inputText};
+
+    background: ${props=> props.theme.colors.inputBackground};
+    border: solid 1px ${props=> props.theme.colors.inputBorder};
     border-radius: 0.25rem;
 
     &:last-of-type {
@@ -40,8 +42,8 @@ export const Container = styled.form`
     align-items: center;
     justify-content: center;
 
-    color: var(--shape);
-    background: var(--green);
+    color: ${props=> props.theme.colors.text};
+    background:${props=> props.theme.colors.green};
 
     font-size: 1rem;
     font-weight: 600;
@@ -66,12 +68,11 @@ export const RadioBox = styled.button<RadioBoxProps>`
   line-height: 1.5rem;
 
   background: none;
-  color: var(--text-title);
+  color: ${props=> props.theme.colors.textTitle};
   border: solid 1px rgba(150, 156, 178, 0.2);
   border-radius: 0.25rem;
 
   @media (max-width: 500px) {
-    /* padding: 1.25rem 2rem; */
     min-width:50%;
     }
   img {
