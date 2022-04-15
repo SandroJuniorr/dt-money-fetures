@@ -4,7 +4,7 @@ export default {
     colors: {
         red: "#E52E4D",
         green: "#33CC95",
-        blue: "#202024",
+        blue: "#5429CC",
         blueLight: "#6933FF",
         textTitle: "#D4D4D4",
         textBody: "#969CB3",
