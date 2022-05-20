@@ -25,7 +25,7 @@ Para fixar o conhecimento passado decidi recriar o projeto do zero adicionando n
 
 ## Screenshots 
 <div align="center">
-    <img  src="https://github.com/SandroJuniorr/Images-ReadMe-GItHub/blob/master/dtMoney/Cadastrar%20Transa%C3%A7%C3%A3o.gif" />
+    <img  src="https://github.com/SandroJuniorr/Images-ReadMe-GItHub/blob/master/dtMoney/cadastrar_transa%C3%A7%C3%A3o.gif" />
     <img  src="https://github.com/SandroJuniorr/Images-ReadMe-GItHub/blob/master/dtMoney/dark_mode.gif" />
     
 </div>
