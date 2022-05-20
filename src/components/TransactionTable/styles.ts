@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.table`
-  margin-top: 3rem;
+  margin-top: 3rem; 
   width: 100%;
   text-align: left;
   border-spacing: 0 0.5rem;
@@ -19,6 +19,7 @@ export const Container = styled.table`
         "category date";
 
       margin-bottom: 1.75rem ;
+      border-radius: 0.25rem;
 
       
 
@@ -57,7 +58,8 @@ export const Container = styled.table`
     background-color: ${props=> props.theme.colors.shape} ;
     padding: 1.25rem 2rem;
     color: ${props=> props.theme.colors.textBody};
-    border-radius: 0.25rem;
+    border: 1px solid ${props=> props.theme.colors.shape};
+    
 
     &.title {
       color: ${props=> props.theme.colors.textTitle};
